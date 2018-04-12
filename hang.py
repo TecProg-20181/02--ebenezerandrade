@@ -1,7 +1,7 @@
 import random
 import string
 
-WORDLIST_FILENAME = "palavras.txt"
+WORDLIST_FILENAME = "words.txt"
 
 def loadWords():
     """
@@ -44,7 +44,6 @@ def getGuessedWord():
      return guessed
 
 def getAvailableLetters():
-    import string
     # 'abcdefghijklmnopqrstuvwxyz'
     available = string.ascii_lowercase
 
