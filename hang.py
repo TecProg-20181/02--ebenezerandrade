@@ -18,22 +18,12 @@ def loadWords():
     print "  ", len(wordlist), "words loaded."
     return random.choice(wordlist)
 
-
 def isWordGuessed(secretWord, lettersGuessed):
     secretLetters = []
 
-#    for letter in secretWord:
-#        if letter in secretLetters:
-#            secretLetters.append(letter)
-#        else:
-#            pass
-
     for letter in secretWord:
-        if letter in lettersGuessed:
-            pass
-        else:
+        if letter not in lettersGuessed:
             return False
-
     return True
 
 def getGuessedWord():
